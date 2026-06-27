@@ -27,9 +27,7 @@
             {% else %}
                 <img src="{{ banner.imagen.url }}" class="d-block w-100" alt="{{ banner.cliente }}" style="height: 250px; object-fit: cover;">
             {% endif %}
-            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
-                <h5>Auspiciado por: {{ banner.cliente }}</h5>
-            </div>
+            
         </div>
         {% endfor %}
     </div>
