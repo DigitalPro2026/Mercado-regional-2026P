@@ -28,6 +28,7 @@ class Anuncio(models.Model):
     categoria = models.CharField(max_length=20, choices=CATEGORIAS, default='otros')
     imagen = models.ImageField(upload_to='fotos_anuncios/', null=True, blank=True, verbose_name="Foto del producto")
     fecha_creacion = models.DateTimeField(auto_now_add=True)
+    aprobado = models.BooleanField(default=False, verbose_name="¿Anuncio Aprobado para mostrarse?")
 
 
     
