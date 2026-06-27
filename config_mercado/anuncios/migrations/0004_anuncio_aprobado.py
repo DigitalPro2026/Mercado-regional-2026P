@@ -3,7 +3,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('anuncios', '0001_initial'),
+        ('anuncios', '0003_bannerpublicitario_alter_anuncio_categoria'),
     ]
 
     operations = [
