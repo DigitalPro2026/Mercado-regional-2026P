@@ -3,7 +3,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('anuncios', '0003_bannerpublicitario_alter_anuncio_categoria_and_more'), # Revisa si tu último archivo en esa carpeta se llama así o similar
+        ('anuncios', '0003_bannerpublicitario_alter_anuncio_categoria_and_more'),
     ]
 
     operations = [
