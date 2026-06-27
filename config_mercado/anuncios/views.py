@@ -5,9 +5,9 @@ from .forms import AnuncioForm  # 👈 Importamos el formulario que acabas de cr
 def pagina_inicio(request):
     distrito_filtrado = request.GET.get('distrito')
     if distrito_filtrado:
-        anuncios = Anuncio.objects.filter(distrito=distrito_filtrado).order_by('-fecha_creacion')
+        anuncios = Anuncio.objects.filter(distrito=distrito_filtrado, aprobado=True).order_by('-fecha_creacion')
     else:
-        anuncios = Anuncio.objects.all().order_by('-fecha_creacion')
+        anuncios = Anuncio.objects.filter(aprobado=True).order_by('-fecha_creacion')
         
     banners = BannerPublicitario.objects.filter(activo=True)
         
