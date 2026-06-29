@@ -6,3 +6,4 @@ tzdata==2026.2
 gunicorn==20.1.0
 setuptools
 dj-database-url
+psycopg2-binary
